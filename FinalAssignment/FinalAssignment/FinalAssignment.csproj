@@ -768,6 +768,7 @@
     <Content Include="dist\js\sidebarmenu.js" />
     <Content Include="dist\js\sidebarmenu.min.js" />
     <Content Include="index.aspx" />
+    <Content Include="login.aspx" />
     <Content Include="product.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -793,6 +794,13 @@
     </Compile>
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
     </Compile>
     <Compile Include="product.aspx.cs">
       <DependentUpon>product.aspx</DependentUpon>
