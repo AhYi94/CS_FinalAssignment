@@ -13,5 +13,9 @@ namespace FinalAssignment
         {
 
         }
+        protected void submitLogin(object sender, EventArgs e)
+        {
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Login Successful')", true);
+        }
     }
 }

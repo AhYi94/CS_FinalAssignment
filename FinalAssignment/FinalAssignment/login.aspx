@@ -8,6 +8,7 @@
                 <h1>Login</h1>
             </div>
         </div>
+        <br />
         <div class="row">
             <div class="col-2 ml-auto">
                 <h3>Username :</h3>
@@ -23,7 +24,16 @@
             <div class="col-5 text-left">
                 <asp:TextBox ID="password" runat="server"></asp:TextBox>
             </div>
+        </div> 
+        <br />
+        <div class="row">
+             <div class="col-2 ml-auto">
+                  </div>
+            <div class="col-5 text-left">
+                <asp:Button ID="submitLogin" runat="server" Text="Login" OnClick="submitLogina" />
+            </div>
         </div>
+     
     </div>
     
 </asp:Content>
