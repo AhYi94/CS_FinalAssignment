@@ -11,11 +11,14 @@ namespace FinalAssignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+          
             logoutBtn.Visible = false;
+            cart.Visible = false;
             if (Session["usernameSession"] != null)
             {
-                usernameSession.Text = "hello  " + Session["usernameSession"];
+                usernameSession.Text = "Hello  " + Session["usernameSession"];
                 logoutBtn.Visible = true;
+                cart.Visible = true;
             }
             else
             {
