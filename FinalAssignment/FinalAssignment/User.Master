@@ -27,6 +27,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
+        <form id="form1" runat="server">
     <!--? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
@@ -61,9 +62,11 @@
                                 </ul>
                             </nav>
                         </div>
+                           <asp:Label ID="usernameSession" runat="server" Text="Label"></asp:Label>                               
+                            <asp:Button ID="logoutBtn" runat="server" Text="Logout" OnClick="logoutBtn_Click"/>
                         <!-- Header Right -->
-                        <div class="header-right">
-                            <ul>            
+                        <div class="header-right"  >
+                            <ul>                                     
                                 <li> <a href="login.aspx"><span class="flaticon-user"></span></a></li>
                                 <li><a href="cart.html"><span class="flaticon-shopping-cart"></span></a> </li>
                             </ul>
@@ -78,7 +81,7 @@
         </div>
         <!-- Header End -->
     </header>
-    <form id="form1" runat="server">
+
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>

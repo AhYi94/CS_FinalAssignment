@@ -11,7 +11,25 @@ namespace FinalAssignment
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            logoutBtn.Visible = false;
+            if (Session["usernameSession"] != null)
+            {
+                usernameSession.Text = "hello  " + Session["usernameSession"];
+                logoutBtn.Visible = true;
+            }
+            else
+            {
+                usernameSession.Text = "";
+            }
 
+
+        }
+
+        protected void logoutBtn_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Logout Successfully')", true);
+            Response.Redirect("login.aspx");
         }
     }
 }
