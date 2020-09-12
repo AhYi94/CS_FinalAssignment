@@ -35,7 +35,7 @@
                                                     <asp:TextBox ID="email" runat="server" placeholder="Enter Email Address"  class="form-control" aria-describedby="emailHelp"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group">                                              
-                                                    <asp:TextBox ID="password" runat="server" class="form-control" placeholder="Password"></asp:TextBox>
+                                                    <asp:TextBox ID="password" runat="server" class="form-control" placeholder="Password" type="password"></asp:TextBox>
                                                 </div>
                                                 <div class="form-group">
                                                     <div class="custom-control custom-checkbox small" style="line-height: 1.5rem;">
