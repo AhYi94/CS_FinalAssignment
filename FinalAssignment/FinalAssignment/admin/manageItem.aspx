@@ -27,7 +27,6 @@
             <div class="panel-body">
                 <form class="form-horizontal" action="" method="post">
                     <fieldset>
-
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="name">Item Name</label>
                             <div class="col-md-9">
