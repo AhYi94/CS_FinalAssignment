@@ -40,8 +40,7 @@
             </div>
        
             <li class="nav-item">
-                <a class="nav-link collapsed" href="manageItem.aspx" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
-                    aria-controls="collapseTable">
+                <a class="nav-link collapsed" href="manageItem.aspx">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Manage Item</span>
                 </a>

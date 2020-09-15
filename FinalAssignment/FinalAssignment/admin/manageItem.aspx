@@ -25,12 +25,12 @@
                 <span class="pull-right clickable panel-toggle panel-button-tab-left"><em class="fa fa-toggle-up"></em></span>
             </div>
             <div class="panel-body">
-                <form class="form-horizontal" action="" method="post">
+                
                     <fieldset>
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="name">Item Name</label>
                             <div class="col-md-9">
-                                <asp:TextBox ID="name" runat="server" class="form-control" placeholder="Type your product name..."></asp:TextBox>
+                                <asp:TextBox ID="name" runat="server" class="form-control" placeholder="Type your item name..."></asp:TextBox>
                                 <br />
                             </div>
                         </div>
@@ -38,7 +38,7 @@
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="email">Item Price</label>
                             <div class="col-md-9">
-                                <asp:TextBox ID="price" runat="server" class="form-control" placeholder="Type your product price..."></asp:TextBox>
+                                <asp:TextBox ID="price" runat="server" class="form-control" placeholder="Type your item price..."></asp:TextBox>
                                 <br />
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="message">Item Description</label>
                             <div class="col-md-9">
-                                <textarea id="description" rows="5" name="description" class="form-control" runat="server" placeholder="Type your product description..."></textarea>
+                                <textarea id="description" rows="5" name="description" class="form-control" runat="server" placeholder="Type your item description..."></textarea>
                                 <br />
                             </div>
                         </div>
@@ -54,17 +54,18 @@
                         <div class="form-group">
                             <label class="col-md-2 control-label" for="message">Insert Item Image</label>
                             <div class="col-md-9">
-                                <asp:FileUpload ID="FileUpload1" runat="server" />
+                                <asp:FileUpload ID="FileUpload" runat="server" />
                                 <br />
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-md-11 widget-right">
+                                <asp:LinkButton ID="LinkButton1" class="btn btn-primary" runat="server"  OnClick="Button1_Click" >ADD</asp:LinkButton>
                             </div>
                         </div>
                     </fieldset>
-                </form>
+            
             </div>
         </div>
     </div>
