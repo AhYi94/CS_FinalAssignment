@@ -28,7 +28,7 @@
                                 <h2>New to our Shop?</h2>
                                 <p>There are advances being made in science and technology
                                     everyday, and a good example of this is the</p>
-                                <a href="#" class="btn_3">Create an Account</a>
+                                <a href="register.aspx" class="btn_3">Create an Account</a>
                             </div>
                         </div>
                     </div>
@@ -39,17 +39,17 @@
                                     Please Sign in now</h3>
                                 <form class="row contact_form" action="#" method="post" novalidate="novalidate">
                                     <div class="col-md-12 form-group p_star">
-                                          <asp:TextBox ID="username" runat="server" class="form-control"></asp:TextBox>
+                                          <asp:TextBox ID="username" runat="server" class="form-control" placeholder="Username"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
-                                     <asp:TextBox ID="password" runat="server" class="form-control" Type="password"></asp:TextBox>
+                                     <asp:TextBox ID="password" runat="server" class="form-control" Type="password" placeholder="Password"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <div class="creat_account d-flex align-items-center">
                                             <input type="checkbox" id="f-option" name="selector">
                                             <label for="f-option">Remember me</label>
                                         </div>                      
-                                        <asp:Button ID="Button1" runat="server" Text="Submit" Onclick="submitLogin"/>
+                                        <asp:Button class="btn_3" ID="Button1" runat="server" Text="Submit" Onclick="submitLogin"/>
                                         <a class="lost_pass" href="#">forget password?</a>
                                     </div>
                                 </form>
