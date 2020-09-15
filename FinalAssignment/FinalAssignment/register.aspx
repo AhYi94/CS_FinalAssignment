@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/User.Master" AutoEventWireup="true" CodeBehind="register.aspx.cs" Inherits="FinalAssignment.register" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -22,26 +23,32 @@
         <section class="login_part section_padding ">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-12 col-md-12" >
+                    <div class="col-lg-12 col-md-12">
                         <div class="login_part_form mx-auto col-6">
                             <div class="login_part_form_iner">
                                 <h3>Register</h3>
                                 <form class="row contact_form" action="#" method="post" novalidate="novalidate">
                                     <div class="col-md-12 form-group p_star">
-                                          <asp:TextBox ID="email" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
+                                        <p>Name</p>
+                                     <asp:TextBox ID="nameInput" runat="server" class="form-control" Type="text" placeholder="Name"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
-                                     <asp:TextBox ID="password" runat="server" class="form-control" Type="password" placeholder="Password"></asp:TextBox>
+                                        <p>Email</p>
+                                        <asp:TextBox ID="emailInput" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
-                                     <asp:TextBox ID="cpassword" runat="server" class="form-control" Type="password" placeholder="Confirm Password"></asp:TextBox>
+                                        <p>Password</p>
+                                        <asp:TextBox ID="passwordInput" runat="server" class="form-control" Type="password" placeholder="Password"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
-                                     <asp:TextBox ID="name" runat="server" class="form-control" Type="text" placeholder="Name"></asp:TextBox>
+                                        <p>Confirm Password</p>
+                                        <asp:TextBox ID="cPasswordInput" runat="server" class="form-control" Type="password" placeholder="Confirm Password"></asp:TextBox>
                                     </div>
-                                    <div class="col-md-12 form-group">               
-                                        <asp:Button class="btn_3" ID="Button1" runat="server" Text="Submit" />
+                                    <div class="col-md-12 form-group">
+                                        <asp:Button class="btn_3" ID="ButtonRegister" runat="server" Text="Submit" OnClick="ButtonRegister_Click"/>
                                     </div>
+
+
                                 </form>
                             </div>
                         </div>
