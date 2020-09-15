@@ -2639,6 +2639,7 @@
     <Content Include="assets\webfonts\fa-brands-400.svg" />
     <Content Include="assets\webfonts\fa-regular-400.svg" />
     <Content Include="assets\webfonts\fa-solid-900.svg" />
+    <Content Include="cart.aspx" />
     <Content Include="contact.aspx" />
     <Content Include="dist\css\fonts\Gilmer-Bold.svg" />
     <Content Include="dist\css\fonts\Gilmer-Heavy.svg" />
@@ -2745,6 +2746,13 @@
     </Compile>
     <Compile Include="admin\manageitem.aspx.designer.cs">
       <DependentUpon>manageitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
