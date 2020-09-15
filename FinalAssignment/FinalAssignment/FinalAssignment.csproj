@@ -89,7 +89,8 @@
     <Content Include="admin\js\ruang-admin.js" />
     <Content Include="admin\js\ruang-admin.min.js" />
     <Content Include="admin\login.aspx" />
-    <Content Include="admin\manageItem.aspx" />
+    <Content Include="admin\manageaddItem.aspx" />
+    <Content Include="admin\manageitem.aspx" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.css" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.min.css" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.standalone.css" />
@@ -2731,12 +2732,19 @@
     <Compile Include="admin\login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="admin\manageItem.aspx.cs">
-      <DependentUpon>manageItem.aspx</DependentUpon>
+    <Compile Include="admin\manageaddItem.aspx.cs">
+      <DependentUpon>manageaddItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="admin\manageItem.aspx.designer.cs">
-      <DependentUpon>manageItem.aspx</DependentUpon>
+    <Compile Include="admin\manageaddItem.aspx.designer.cs">
+      <DependentUpon>manageaddItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manageitem.aspx.cs">
+      <DependentUpon>manageitem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manageitem.aspx.designer.cs">
+      <DependentUpon>manageitem.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
