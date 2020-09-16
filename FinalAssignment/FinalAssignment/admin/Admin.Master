@@ -52,6 +52,13 @@
                     <span>User</span>
                 </a>
             </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="login.aspx">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
            
      
         </ul>
