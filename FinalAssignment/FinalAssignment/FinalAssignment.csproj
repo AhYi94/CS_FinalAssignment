@@ -90,6 +90,7 @@
     <Content Include="admin\js\ruang-admin.min.js" />
     <Content Include="admin\login.aspx" />
     <Content Include="admin\manageaddItem.aspx" />
+    <Content Include="admin\manageDeleteItem.aspx" />
     <Content Include="admin\manageitem.aspx" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.css" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.min.css" />
@@ -2739,6 +2740,13 @@
     </Compile>
     <Compile Include="admin\manageaddItem.aspx.designer.cs">
       <DependentUpon>manageaddItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manageDeleteItem.aspx.cs">
+      <DependentUpon>manageDeleteItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manageDeleteItem.aspx.designer.cs">
+      <DependentUpon>manageDeleteItem.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\manageitem.aspx.cs">
       <DependentUpon>manageitem.aspx</DependentUpon>
