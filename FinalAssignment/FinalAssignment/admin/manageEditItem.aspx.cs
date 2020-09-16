@@ -24,7 +24,7 @@ namespace FinalAssignment.admin
             }
             else
             {
-                Response.Redirect("adminViewProduct.aspx");
+                Response.Redirect("manageitem.aspx");
             }
         }
 

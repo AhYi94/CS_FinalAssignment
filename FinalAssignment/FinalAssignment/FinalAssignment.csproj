@@ -93,6 +93,8 @@
     <Content Include="admin\manageDeleteItem.aspx" />
     <Content Include="admin\manageEditItem.aspx" />
     <Content Include="admin\manageitem.aspx" />
+    <Content Include="admin\userList.aspx" />
+    <Content Include="admin\userListEdit.aspx" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.css" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.min.css" />
     <Content Include="admin\vendor\bootstrap-datepicker\css\bootstrap-datepicker.standalone.css" />
@@ -2762,6 +2764,20 @@
     </Compile>
     <Compile Include="admin\manageitem.aspx.designer.cs">
       <DependentUpon>manageitem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userList.aspx.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userList.aspx.designer.cs">
+      <DependentUpon>userList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\userListEdit.aspx.cs">
+      <DependentUpon>userListEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\userListEdit.aspx.designer.cs">
+      <DependentUpon>userListEdit.aspx</DependentUpon>
     </Compile>
     <Compile Include="cart.aspx.cs">
       <DependentUpon>cart.aspx</DependentUpon>
