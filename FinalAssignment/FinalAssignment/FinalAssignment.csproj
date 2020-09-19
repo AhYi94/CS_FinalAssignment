@@ -91,7 +91,9 @@
     <Content Include="admin\login.aspx" />
     <Content Include="admin\manageaddItem.aspx" />
     <Content Include="admin\manageDeleteItem.aspx" />
+    <Content Include="admin\manageViewSalesOrder.aspx" />
     <Content Include="admin\manageEditItem.aspx" />
+    <Content Include="admin\manageEditSalesOrder.aspx" />
     <Content Include="admin\manageitem.aspx" />
     <Content Include="admin\userList.aspx" />
     <Content Include="admin\userListEdit.aspx" />
@@ -2753,12 +2755,26 @@
     <Compile Include="admin\manageDeleteItem.aspx.designer.cs">
       <DependentUpon>manageDeleteItem.aspx</DependentUpon>
     </Compile>
+    <Compile Include="admin\manageViewSalesOrder.aspx.cs">
+      <DependentUpon>manageViewSalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manageViewSalesOrder.aspx.designer.cs">
+      <DependentUpon>manageViewSalesOrder.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin\manageEditItem.aspx.cs">
       <DependentUpon>manageEditItem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="admin\manageEditItem.aspx.designer.cs">
       <DependentUpon>manageEditItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\manageEditSalesOrder.aspx.cs">
+      <DependentUpon>manageEditSalesOrder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\manageEditSalesOrder.aspx.designer.cs">
+      <DependentUpon>manageEditSalesOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="admin\manageitem.aspx.cs">
       <DependentUpon>manageitem.aspx</DependentUpon>

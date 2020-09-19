@@ -29,7 +29,7 @@ namespace FinalAssignment.admin
 
                 if (dt.Rows.Count > 0)
                 {
-           
+                    Session["adminusernameSession"] = email.Text;
                     ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Login Successful')", true);
                     Response.Redirect("index.aspx");
                 }

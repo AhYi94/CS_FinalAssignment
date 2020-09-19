@@ -52,11 +52,11 @@
                     <span>User</span>
                 </a>
             </li>
-
+             <form id="form1" runat="server">
               <li class="nav-item">
-                <a class="nav-link" href="login.aspx">
-                    <i class="fas fa-user-friends"></i>
-                    <span>Logout</span>
+                <a class="nav-link">
+                   <i class="fas fa-sign-out-alt"></i>
+                    <asp:Button ID="Button1" runat="server" class="px-5 " Text="Logout" style="border-width:0px; background-color:white; color:grey;" OnClick="logout_Click"/>
                 </a>
             </li>
        
@@ -64,7 +64,7 @@
         </ul>
         <!-- Sidebar -->
         <div id="content-wrapper" class="d-flex flex-column">
-            <form id="form1" runat="server">
+           
                 <div>
                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                     </asp:ContentPlaceHolder>

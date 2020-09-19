@@ -11,7 +11,11 @@ namespace FinalAssignment.admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["adminusernameSession"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
+            adminusernameSession.Text = "Hello  " + Session["adminusernameSession"];
         }
     }
 }

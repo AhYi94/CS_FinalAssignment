@@ -13,5 +13,12 @@ namespace FinalAssignment.admin
         {
 
         }
+
+        protected void logout_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "alertMessage", "alert('Logout Successfully')", true);
+            Response.Redirect("login.aspx");
+        }
     }
 }

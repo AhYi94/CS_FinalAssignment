@@ -16,6 +16,12 @@ namespace FinalAssignment.admin
         StringBuilder table = new StringBuilder();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (Session["adminusernameSession"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
+
             dbcon = new DatabaseConnection();
             DataTable dt = dbcon.getDataSQL("select * from users;");
             int i = 1;

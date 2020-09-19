@@ -13,6 +13,10 @@ namespace FinalAssignment.admin
         private DatabaseConnection dbcon;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["adminusernameSession"] == null)
+            {
+                Response.Redirect("login.aspx");
+            }
             dbcon = new DatabaseConnection();
             var id = Request.QueryString["id"];
             DataTable dt = dbcon.getDataSQL("select * from users where id='" + id + "';");
