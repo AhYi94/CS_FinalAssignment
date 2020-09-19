@@ -74,7 +74,7 @@
                                     <div class="popular-img">
                                         <img src="admin/upload/<%#Eval("image") %>" alt="">
                                         <div class="img-cap">
-                                            <asp:LinkButton ID="AddToCart" runat="server" OnClick="AddToCart_Click"><span>Add to cart</span></asp:LinkButton>
+                                            <asp:LinkButton ID="AddToCart" CommandArgument='<%#Eval("id") %>' runat="server" OnClick="AddToCart_Click"><span>Add to cart</span></asp:LinkButton>
                                         </div>
                                         <div class="favorit-items">
                                             <span class="flaticon-heart"></span>
