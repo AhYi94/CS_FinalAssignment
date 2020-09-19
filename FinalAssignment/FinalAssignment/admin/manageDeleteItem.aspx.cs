@@ -14,14 +14,15 @@ namespace FinalAssignment.admin
         {
             dbcon = new DatabaseConnection();
             var id = Request.QueryString["id"];
+            Response.Write("< script > alert('"+id+"') </ script >)");
             if (id != null)
             {
-                /*string url = HttpContext.Current.Request.Url.AbsoluteUri;
-                Response.Write("< script > alert('New Product has been added successfully.') </ script >);*/
+                //string url = HttpContext.Current.Request.Url.AbsoluteUri;
+                //Response.Write("< script > alert('New Product has been added successfully.') </ script >");
 
-                string query = "delete from product where id=" + id;
+                string query = "delete from products where id=" + id;
                 dbcon.executeSQL(query);
-                Response.Redirect("manageaddItem.aspx");
+                Response.Redirect("manageitem.aspx");
             }
             else
             {

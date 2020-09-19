@@ -52,6 +52,12 @@
                     <span>User</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="manageViewSalesOrder.aspx">
+                   <i class="fas fa-clipboard-list"></i>
+                    <span>Manage Sales Order</span>
+                </a>
+            </li>
              <form id="form1" runat="server">
               <li class="nav-item">
                 <a class="nav-link">

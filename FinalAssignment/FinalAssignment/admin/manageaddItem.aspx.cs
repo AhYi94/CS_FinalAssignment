@@ -52,6 +52,8 @@ namespace FinalAssignment.admin
                         name.Text = "";
                         price.Text = "";
                         description.InnerText = "";
+
+                        Response.Redirect("manageitem.aspx");
                     }
                     catch (Exception ex)
                     {
