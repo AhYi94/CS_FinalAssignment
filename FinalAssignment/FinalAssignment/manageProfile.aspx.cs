@@ -37,8 +37,8 @@ namespace FinalAssignment
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            var login_id = Session["usernameSession"];
-            DataTable dt1 = dbcon.getDataSQL("select * from users where email='" + login_id + "';");
+            var user_email = Session["usernameSession"];
+            DataTable dt1 = dbcon.getDataSQL("select * from users where email='" + user_email + "';");
             var id = dt1.Rows[0]["id"].ToString();
 
             if (nameInput.Text.Equals("") || emailInput.Text.Equals(""))
