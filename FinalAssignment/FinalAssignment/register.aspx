@@ -30,19 +30,19 @@
                                 <form class="row contact_form" action="#" method="post" novalidate="novalidate">
                                     <div class="col-md-12 form-group p_star">
                                         <p>Name</p>
-                                     <asp:TextBox ID="nameInput" runat="server" class="form-control" Type="text" placeholder="Name"></asp:TextBox>
+                                     <asp:TextBox ID="nameInput" runat="server" class="form-control" Type="text"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
                                         <p>Email</p>
-                                        <asp:TextBox ID="emailInput" runat="server" class="form-control" placeholder="Email"></asp:TextBox>
+                                        <asp:TextBox ID="emailInput" runat="server" class="form-control"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
                                         <p>Password</p>
-                                        <asp:TextBox ID="passwordInput" runat="server" class="form-control" Type="password" placeholder="Password"></asp:TextBox>
+                                        <asp:TextBox ID="passwordInput" runat="server" class="form-control" Type="password"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
                                         <p>Confirm Password</p>
-                                        <asp:TextBox ID="cPasswordInput" runat="server" class="form-control" Type="password" placeholder="Confirm Password"></asp:TextBox>
+                                        <asp:TextBox ID="cPasswordInput" runat="server" class="form-control" Type="password"></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group">
                                         <asp:Button class="btn_3" ID="ButtonRegister" runat="server" Text="Submit" OnClick="ButtonRegister_Click"/>
