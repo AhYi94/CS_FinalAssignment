@@ -2697,6 +2697,7 @@
     <Content Include="dist\js\sidebarmenu.min.js" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
+    <Content Include="manageProfile.aspx" />
     <Content Include="product.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Web.config" />
@@ -2807,6 +2808,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="manageProfile.aspx.cs">
+      <DependentUpon>manageProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="manageProfile.aspx.designer.cs">
+      <DependentUpon>manageProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="product.aspx.cs">
       <DependentUpon>product.aspx</DependentUpon>
