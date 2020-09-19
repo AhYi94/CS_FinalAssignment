@@ -15,7 +15,7 @@ namespace FinalAssignment
         {
             if (!this.IsPostBack)
             {
-                DataTable dt = dbcon.getDataSQL("select * from product;");
+                DataTable dt = dbcon.getDataSQL("select * from products;");
                 //Repeater1.DataSource = dt;
                 //Repeater1.DataBind();
             }
