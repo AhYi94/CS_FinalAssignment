@@ -2698,6 +2698,7 @@
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="manageProfile.aspx" />
+    <Content Include="payment.aspx" />
     <Content Include="product.aspx" />
     <Content Include="register.aspx" />
     <Content Include="Web.config" />
@@ -2815,6 +2816,13 @@
     </Compile>
     <Compile Include="manageProfile.aspx.designer.cs">
       <DependentUpon>manageProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="payment.aspx.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="payment.aspx.designer.cs">
+      <DependentUpon>payment.aspx</DependentUpon>
     </Compile>
     <Compile Include="product.aspx.cs">
       <DependentUpon>product.aspx</DependentUpon>
