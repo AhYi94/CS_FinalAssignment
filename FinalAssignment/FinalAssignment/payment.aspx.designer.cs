@@ -13,5 +13,23 @@ namespace FinalAssignment
 
     public partial class paymentaspx
     {
+
+        /// <summary>
+        /// subtotalText control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label subtotalText;
+
+        /// <summary>
+        /// PaymentBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button PaymentBtn;
     }
 }

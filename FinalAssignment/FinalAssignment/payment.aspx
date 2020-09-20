@@ -100,18 +100,17 @@
             </div>
         </div>
         <br>
-        <div class="row">
-
-            <label class="col-md-3 col-form-label">Amount</label>
-            <div class="col-md-9 form-group ">
-                <input id="amount" type="number" />
+        <form runat="server">
+            <div class="row">
+                <label class="col-md-3 col-form-label">Amount</label>
+                <div class="col-md-9 col-form-label">
+                    <asp:Label ID="subtotalText" type="number" runat="server" Text="Label"></asp:Label>
+                </div>
+                <div class="col text-right">
+                    <asp:Button ID="PaymentBtn" runat="server" Text="Submit" class="btn btn-primary" OnClick="PaymentBtn_Click" />
+                </div>
             </div>
-            <div class="col text-right">
-                <button type="submit" class="btn btn-fill btn-rose">Submit</button>
-            </div>
-
-
-        </div>
+        </form>
     </div>
 
 </body>

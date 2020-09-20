@@ -57,7 +57,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <h5>RM <%#Eval("total") %></h5>
+                                                <h5>RM<%#Eval("total") %></h5>
                                             </td>
                                         </tr>
                                     </ItemTemplate>
@@ -75,7 +75,7 @@
                             </tbody>
                         </table>
                         <div class="checkout_btn_inner float-right">
-                            <a class="btn_1 checkout_btn_1" href="#">Proceed to checkout</a>
+                            <a class="btn_1 checkout_btn_1" href="payment.aspx">Proceed to checkout</a>
                         </div>
                     </div>
                 </div>
