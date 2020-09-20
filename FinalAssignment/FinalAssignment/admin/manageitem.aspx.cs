@@ -27,14 +27,13 @@ namespace FinalAssignment.admin
             int i = 1;
 
             table.Append("<table border='1' style='width:100%'>");
-            table.Append("<tr><th>ID</th><th>Name</th><th>Price</th><th>Description</th><th>Image</th><th>Created_at</th><th>Update</th><th>Delete</th></tr>");
+            table.Append("<tr><th>ID</th><th>Name</th><th>Price</th><th>Description</th><th>Image</th><th>Created_at</th><th>Action</th>    </tr>");
 
             foreach (DataRow dr in dt.Rows)
             {
                 table.Append("<tr>");
                 table.Append("<td width=30>" + i + "</td><td width=120>" + dr[1].ToString() + "</td><td width=100>" + "RM" + dr[2].ToString() + "</td><td width=350>" + dr[3].ToString() + "</td><td width=100>" + "<img src = 'upload/" + dr[4] + "' width = 100px height = 100px >" + "</td><td width=100>" + dr[5].ToString() + "</td>");
-                table.Append("<td width=50>" + "<a href = 'manageEditItem.aspx?id=" + dr[0] + "'><button type='button' class='btn btn - primary'>Edit</button></a>" + "</td>");
-                table.Append("<td width=50>" + "<a href = 'manageDeleteItem.aspx?id=" + dr[0] + "'><button type='button' class='btn btn - primary'>Delete</button></a>" + "</td>");
+                table.Append("<td width=200>" + "<a href = 'manageEditItem.aspx?id=" + dr[0] + "'><button type='button' class='btn btn - primary'>Edit</button></a>"  + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href = 'manageDeleteItem.aspx?id=" + dr[0] + "'><button type='button' class='btn btn - primary'>Delete</button></a>" + "</td> ");
                 table.Append("</tr>");
                 i++;
             }

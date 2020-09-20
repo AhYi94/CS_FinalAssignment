@@ -27,7 +27,7 @@ namespace FinalAssignment.admin
             int i = 1;
 
             table.Append("<table border='1' style='width:100%'>");
-            table.Append("<tr><th>ID</th><th>Name</th><th>Email</th><th>Password</th><th>created_at</th><th>Edit</th></tr>");
+            table.Append("<tr><th>ID</th><th>Name</th><th>Email</th><th>Password</th><th>created_at</th><th>Action</th></tr>");
 
             foreach (DataRow dr in dt.Rows)
             {

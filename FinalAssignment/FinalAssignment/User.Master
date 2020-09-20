@@ -70,7 +70,9 @@
                                 <ul>
                                     <% if (Session["usernameSession"] != null)
                                         { %>
+                                      <li><a href="manageSalesOrder.aspx"><span class="flaticon-history"></span></a></li>
                                     <li><a href="manageProfile.aspx"><span class="flaticon-user"></span></a></li>
+
                                     <% }
                                         else
                                         {%>
