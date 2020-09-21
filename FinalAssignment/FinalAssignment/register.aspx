@@ -19,8 +19,7 @@
             </div>
         </div>
         <!-- Hero Area End-->
-        <!--================login_part Area =================-->
-        <section class="login_part section_padding ">
+        <section class="login_part">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-12 col-md-12">
@@ -30,22 +29,22 @@
                                 <form class="row contact_form" action="#" method="post" novalidate="novalidate">
                                     <div class="col-md-12 form-group p_star">
                                         <p>Name</p>
-                                     <asp:TextBox ID="nameInput" runat="server" class="form-control" Type="text"></asp:TextBox>
+                                        <asp:TextBox ID="nameInput" runat="server" class="form-control" Type="text" required></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
                                         <p>Email</p>
-                                        <asp:TextBox ID="emailInput" runat="server" class="form-control"></asp:TextBox>
+                                        <asp:TextBox ID="emailInput" type="email" runat="server" class="form-control" required></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
                                         <p>Password</p>
-                                        <asp:TextBox ID="passwordInput" runat="server" class="form-control" Type="password"></asp:TextBox>
+                                        <asp:TextBox ID="passwordInput" runat="server" class="form-control" Type="password" required></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group p_star">
                                         <p>Confirm Password</p>
-                                        <asp:TextBox ID="cPasswordInput" runat="server" class="form-control" Type="password"></asp:TextBox>
+                                        <asp:TextBox ID="cPasswordInput" runat="server" class="form-control" Type="password" required></asp:TextBox>
                                     </div>
                                     <div class="col-md-12 form-group">
-                                        <asp:Button class="btn_3" ID="ButtonRegister" runat="server" Text="Submit" OnClick="ButtonRegister_Click"/>
+                                        <asp:Button class="btn_3" ID="ButtonRegister" runat="server" Text="Submit" OnClick="ButtonRegister_Click" />
                                     </div>
 
 
@@ -56,6 +55,5 @@
                 </div>
             </div>
         </section>
-        <!--================login_part end =================-->
     </main>
 </asp:Content>
