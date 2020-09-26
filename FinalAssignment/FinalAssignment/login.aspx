@@ -49,7 +49,7 @@
                                             <input type="checkbox" id="f-option" name="selector">
                                             <label for="f-option">Remember me</label>
                                         </div>                      
-                                        <asp:Button class="btn_3" ID="Button1" runat="server" Text="Submit" Onclick="submitLogin"/>
+                                        <asp:Button class="btn_3" ID="Button1" runat="server" Text="Login" Onclick="submitLogin"/>
                                         <a class="lost_pass" href="#">forget password?</a>
                                     </div>
                                 </form>
