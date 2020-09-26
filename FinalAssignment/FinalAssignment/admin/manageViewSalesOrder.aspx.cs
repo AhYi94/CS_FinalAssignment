@@ -23,16 +23,16 @@ namespace FinalAssignment.admin
 
 
             dbcon = new DatabaseConnection();
-            DataTable dt = dbcon.getDataSQL("SELECT c.*, p.name as product_name, p.price as product_price, p.image as product_image, quantity * p.price as total from carts as c LEFT JOIN users as u on c.user_id = u.id LEFT JOIN products as p on c.product_id = p.id where c.status = 'Paid'; ");
+            DataTable dt = dbcon.getDataSQL("SELECT c.*,u.name as user_name , p.name as product_name, p.price as product_price, p.image as product_image, quantity * p.price as total from carts as c LEFT JOIN users as u on c.user_id = u.id LEFT JOIN products as p on c.product_id = p.id where c.status = 'Paid'; ");
             int i = 1;
 
             table.Append("<table border='1' style='width:100%'>");
-            table.Append("<tr><th>ID</th><th>Image</th><th>Product Name</th><th>Product Price</th><th>Quantity</th><th>Status</th><th>Created_at</th><th>Action</th></tr>");
+            table.Append("<tr><th>ID</th><th>Image</th><th>Product Name</th><th>Product Price</th><th>Quantity</th><th>Username</th><th>Status</th><th>Created_at</th><th>Action</th></tr>");
 
             foreach (DataRow dr in dt.Rows)
             {
                 table.Append("<tr>");
-                table.Append("<td>" + i + "</td><td>" + "<img src = 'upload/" + dr["product_image"] + "' width = 100px height = 100px >" + " </td><td>" + dr["product_name"].ToString() + "</td><td>" + dr["product_price"].ToString() + "</td><td>" + dr["quantity"].ToString() + "</td><td>" + dr["status"].ToString() + "</td><td>" + dr["created_at"].ToString() + "</td>");
+                table.Append("<td>" + i + "</td><td>" + "<img src = 'upload/" + dr["product_image"] + "' width = 100px height = 100px >" + " </td><td>" + dr["product_name"].ToString() + "</td><td>" + dr["product_price"].ToString() + "</td><td>" + dr["quantity"].ToString() + "</td><td>" + dr["user_name"].ToString() + "</td><td>" + dr["status"].ToString() + "</td><td>" + dr["created_at"].ToString() + "</td>");
                 table.Append("<td>" + "<a href = 'manageEditSalesOrder.aspx?id=" + dr["id"] + "'><button type='button' class='btn btn - primary'>Edit</button></a>" + "</td>");
                 table.Append("</tr>");
                 i++;
