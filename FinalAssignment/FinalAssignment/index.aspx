@@ -16,7 +16,7 @@
                                     <h1 data-animation="fadeInLeft" data-delay=".4s" data-duration="2000ms">Select Your New Perfect Style</h1>
                                     <!-- Hero-btn -->
                                     <div class="hero__btn" data-animation="fadeInLeft" data-delay=".8s" data-duration="2000ms">
-                                        <a href="product.aspx" class="btn hero-btn">Shop Now</a>
+                                        <a href="product.aspx" class="btn hero-btn">Shop Now</a> 
                                     </div>
                                 </div>
                             </div>
